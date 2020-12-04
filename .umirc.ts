@@ -2,12 +2,14 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'BHP',
-  favicon: '/images/logo.png',
-  logo: '/images/logo.png',
+  favicon: 'https://docs.bhpnet.io/default.png',
+  logo: 'https://docs.bhpnet.io/default.png',
   outputPath: 'docs-dist',
-  description:'BHP Documents',
-  locales:[['en-US', 'English'], ['zh-CN', '中文']],
-  ssr: {},
+  description: 'BHP Documents',
+  locales: [
+    ['en-US', 'English'],
+    ['zh-CN', '中文'],
+  ],
   exportStatic: {},
   base: '/doc',
   publicPath: '/doc/',
@@ -37,13 +39,66 @@ export default defineConfig({
         title: 'Introduction',
         children: ['guide/index', 'guide/getting-started'],
       },
+      {
+        title: 'Concepts',
+        children: ['guide/consensus', 'guide/genesis'],
+      },
+      {
+        title: 'Explorer',
+        children: ['guide/explorer'],
+      },
+      {
+        title: 'Wallet',
+        children: ['guide/wallet', 'guide/metamask'],
+      },
     ],
     // 如果该路径有其他语言，需在前面加上语言前缀，需与 locales 配置中的路径一致
     '/zh-CN/guide': [
       {
         title: '介绍',
         children: ['guide/index', 'guide/getting-started'],
-      }
+      },
+      {
+        title: '概念',
+        children: ['guide/consensus', 'guide/genesis'],
+      },
+      {
+        title: '浏览器',
+        children: ['guide/explorer'],
+      },
+      {
+        title: '钱包',
+        children: ['guide/wallet', 'guide/metamask'],
+      },
+    ],
+    '/developer': [
+      {
+        title: 'Deploy',
+        children: [
+          'developer/fullnode',
+          'developer/remix',
+          'developer/truffle',
+        ],
+      },
+      {
+        title: 'Wallet',
+        children: ['guide/wallet', 'guide/metamask'],
+      },
+    ],
+    // 如果该路径有其他语言，需在前面加上语言前缀，需与 locales 配置中的路径一致
+    '/zh-CN/developer': [
+      {
+        title: '部署',
+        children: [
+          'developer/fullnode',
+          'developer/remix',
+          'developer/truffle',
+        ],
+      },
+      {
+        title: '钱包',
+        children: ['guide/wallet', 'guide/metamask'],
+      },
     ],
   },
 });
