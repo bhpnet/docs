@@ -81,8 +81,8 @@ export default defineConfig({
         ],
       },
       {
-        title: 'Wallet',
-        children: ['guide/wallet', 'guide/metamask'],
+        title: 'Tool',
+        children: ['developer/tool'],
       },
     ],
     // 如果该路径有其他语言，需在前面加上语言前缀，需与 locales 配置中的路径一致
@@ -96,8 +96,8 @@ export default defineConfig({
         ],
       },
       {
-        title: '钱包',
-        children: ['guide/wallet', 'guide/metamask'],
+        title: '工具',
+        children: ['developer/tool'],
       },
     ],
   },

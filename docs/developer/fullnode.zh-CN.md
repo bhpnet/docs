@@ -34,3 +34,45 @@ nav:
   从创世开始同步整个节点，验证所有块并执行所有事务。此模式比快速同步模式慢一些，但具有更高的安全性。
 
 ## 运行全节点的步骤
+
+1. 克隆源代码
+
+确保已安装 [Go 1.13+](https://golang.org/doc/install) 并添加`GOPATH`到`PATH`环境变量中
+
+```
+git clone https://github.com/bhpnet/bhp
+# 进入目录
+cd bhp
+# 编译安装geth
+make geth
+```
+
+2. 下载配置文件
+
+下载`genesis.json`文件
+
+```
+
+```
+
+3. 本地初始化 genesis 状态
+
+```
+geth --datadir node init genesis.json
+```
+
+4. 启动全节点
+
+```
+## 启动一个全节点
+
+```
+
+启动验证节点
+
+```
+## 生成账户和输出密码
+geth account new --datadir ./node
+echo {your-password} > password.txt
+
+```
