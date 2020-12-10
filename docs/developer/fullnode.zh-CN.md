@@ -1,5 +1,5 @@
 ---
-title: 全节点
+title: 运行全节点
 order: 1
 nav:
   order: 2
