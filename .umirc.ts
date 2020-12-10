@@ -78,6 +78,7 @@ export default defineConfig({
           'developer/fullnode',
           'developer/remix',
           'developer/truffle',
+          'developer/blockscout',
         ],
       },
       {
@@ -93,6 +94,7 @@ export default defineConfig({
           'developer/fullnode',
           'developer/remix',
           'developer/truffle',
+          'developer/blockscout',
         ],
       },
       {
