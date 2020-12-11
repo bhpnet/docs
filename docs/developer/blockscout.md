@@ -86,7 +86,7 @@ nav:
 
 5.  If you have deployed before, please delete the static resources of the previous version，`mix phx.digest.clean`
 
-6.  Install Mix dependencies, compile them and compile the application: `mix do deps.get, local.rebar --force, deps.compile, compile`
+6.  Install Mix dependencies, compile them and compile the application(If you are in mainland China and other network-restricted areas, please use a proxy to avoid failure to install dependencies due to network problems.): `mix do deps.get, local.rebar --force, deps.compile, compile`
 
 7.  Create and migrate database `mix do ecto.create,etco.migrate`
 

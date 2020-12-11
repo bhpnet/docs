@@ -86,7 +86,7 @@ nav:
 
 5.  如果你以前部署过，请删除以前版本的静态资源，`mix phx.digest.clean`
 
-6.  安装 Mix 依赖项，并编译应用程序 `mix do deps.get, local.rebar --force, deps.compile, compile`
+6.  安装 Mix 依赖项，并编译应用程序(如果你是在中国大陆以及其他网络受限地区，请使用代理，避免因网络问题安装依赖失败) `mix do deps.get, local.rebar --force, deps.compile, compile`
 
 7.  创建数据库`mix do ecto.create,etco.migrate`
 
