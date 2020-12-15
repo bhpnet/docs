@@ -6,7 +6,7 @@ title: Local BHP Network
 
 ### 1. Prereq : Install Geth
 
-Review the guide [here](/developer/verify)
+Review the guide [here](/developer/fullnode)
 
 ### 2. Prereq : create /projects
 
@@ -14,8 +14,8 @@ Create a `/projects` symbolic link
 _(Note: This step is simply so "/projects" can be used in all other commands, instead you could use full paths, or set an env var)_
 
 ```
-$ mkdir <my projects folder>
-$ sudo ln -s <my projects folder> /projects
+mkdir <my projects folder>
+sudo ln -s <my projects folder> /projects
 ```
 
 ### 3. Create local_ethereum_blockchain folder

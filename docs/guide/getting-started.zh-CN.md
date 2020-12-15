@@ -2,6 +2,6 @@
 title: 快速上手
 ---
 
-## 环境准备
+## 运行全节点
 
-首先得有 [node](https://nodejs.org/en/)，并确保 node 版本是 10.13 或以上。
+[运行全节点](/zh-CN/developer/fullnode)

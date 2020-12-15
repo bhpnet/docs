@@ -6,7 +6,7 @@ nav:
   order: 1
 ---
 
-## What's bhp?
+## What's BHP?
 
 The BHP network is a set of open-source blockchain projects.
 

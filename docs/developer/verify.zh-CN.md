@@ -2,15 +2,21 @@
 title: 在区块浏览器中验证合约
 ---
 
-步骤 1: 在 BHP 网络部署您的合约
+# 在区块浏览器中验证合约
 
-步骤 2: 进入 [BHP Explorer](https://scan.bhpnet.io) 或者 [Testnet Explorer](https://testnet.bhpnet.io)
+## 部署合约
+
+在 BHP 网络部署您的合约
+
+## 进入浏览器
+
+进入 [BHP Explorer](https://scan.bhpnet.io) 或者 [Testnet Explorer](https://testnet.bhpnet.io)
 
 点击 "Verify and Publish"
 
 ![点击 "Verify and Publish"](/images/verify-1.png)
 
-步骤 3：填写正确的合同信息
+## 填写合约信息
 
 ![合同信息](/images/verify-2.png)
 

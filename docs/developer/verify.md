@@ -4,15 +4,23 @@ title: Verify Contract on BHP Explorer
 
 # How to Verify Your Contract on BHP Explorer
 
-## Step 1: Deploy your contract on BHP
+## Deploy contract
 
-## Step 2: Go to [BHP Explorer](https://scan.bhpnet.io) or [Testnet Explorer](https://testnet.bhpnet.io)
+Deploy your contract on BHP
+
+## Go to Explorer
+
+Go to [BHP Explorer](https://scan.bhpnet.io) or [Testnet Explorer](https://testnet.bhpnet.io)
+
+## Click
 
 Click on "Verify and Publish"
 
 ![Click on "Verify and Publish"](/images/verify-1.png)
 
-## Step 3: Fill in the correct information of your contract
+## Fill information of your contract
+
+Fill in the correct information of your contract
 
 ![information of your contract](/images/verify-2.png)
 

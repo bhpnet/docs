@@ -2,4 +2,6 @@
 title: Getting Started
 ---
 
-## Environment setup
+## Run A Fullnode
+
+[Run A Fullnode](/developer/fullnode)

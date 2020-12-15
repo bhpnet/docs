@@ -6,7 +6,7 @@ title: 本地 BHP 网络搭建
 
 ### 1.前提条件：安装 geth
 
-[查看指南](/zh-CN/developer/verify)
+[查看指南](/zh-CN/developer/fullnode)
 
 ### 2. 前提条件 : 创建项目
 
@@ -18,17 +18,17 @@ $ mkdir <my projects folder>
 $ sudo ln -s <my projects folder> /projects
 ```
 
-### 3. Create local_ethereum_blockchain folder
+### 3. 创建 local_ethereum_blockchain 文件夹
 
 ```
 mkdir /projects/local_ethereum_blockchain
 ```
 
-### 4. Create the genesis block config
+### 4. 创建 the genesis block 配置
 
-Create this file : `/projects/local_ethereum_blockchain/genesis.json`
+创建此文件 : `/projects/local_ethereum_blockchain/genesis.json`
 
-With the following contents :
+写入以下内容 :
 
 ```
 {
@@ -49,33 +49,33 @@ With the following contents :
 }
 ```
 
-([info about the genesis file](https://ethereum.stackexchange.com/a/2377/2040))
+([关于 genesis 文件的相关信息](https://ethereum.stackexchange.com/a/2377/2040))
 
-### 5. Initialise an Ethereum node
+### 5. 初始化 an Ethereum 节点
 
 ```
 $ geth --datadir /projects/local_ethereum_blockchain/node1 init /projects/local_ethereum_blockchain/genesis.json
 ```
 
-### 6. Start that Ethereum node
+### 6. 启动 that Ethereum 节点
 
 ```
 $ geth --datadir /projects/local_ethereum_blockchain/node1 --networkid 1000 console
 ```
 
-### 7. Initialise another Ethereum node
+### 7. 初始化另一个 Ethereum 节点
 
 ```
 $ geth --datadir /projects/local_ethereum_blockchain/node-2 init /projects/local_ethereum_blockchain/genesis.json
 ```
 
-### 8. Start the 2nd Ethereum node
+### 8. 启动这一次 Ethereum 节点
 
 ```
 $ geth --datadir /projects/local_ethereum_blockchain/node-2 --port 30304 --nodiscover --networkid 1000 console
 ```
 
-### 9. Connect one node to the other
+### 9. 连接其他节点
 
 In one geth console :
 
@@ -89,29 +89,29 @@ In the other console :
 > admin.addPeer( <the enode value from the first console> )
 ```
 
-## Useful geth commands
+## geth 命令行相关使用
 
-### Node info
+### 节点信息
 
 ```
 > admin.nodeInfo
 ```
 
-### Peers
+### 节点
 
-Show peers
+显示节点
 
 ```
 > admin.peers
 ```
 
-How many peers ?
+查看节点个数
 
 ```
 > admin.peers.length
 ```
 
-### Create an account
+### 创建一个账户
 
 You need an account to do be able to do things like mining
 
@@ -121,7 +121,7 @@ You need an account to do be able to do things like mining
 
 _And make sure your remember/save the password!_
 
-### Unlock account
+### 解锁账户
 
 Neccessary before some actions
 
@@ -129,7 +129,7 @@ Neccessary before some actions
 > personal.unlockAccount( eth.accounts[0] )
 ```
 
-### Start mining
+### 启动挖矿
 
 ```
 > miner.start(1)
@@ -137,70 +137,70 @@ Neccessary before some actions
 
 The first block may take a while to mine, allow a few minutes
 
-### Stop mining
+### 停止挖矿
 
 ```
 > miner.stop()
 ```
 
-### Current block number
+### 当前区块编号
 
 ```
 > eth.blockNumber
 ```
 
-### Details of current block
+### 当前区块详情
 
 ```
 > eth.getBlock( eth.blockNumber )
 ```
 
-### Which node minded the last block
+### 最新区块的矿工
 
 ```
 > eth.getBlock(eth.blockNumber).miner
 ```
 
-### Account balance, in ether
+### 账户余额
 
 ```
 > web3.fromWei(eth.getBalance(eth.accounts[0]))
 ```
 
-### Transfer ether between accounts
+### 账户间转账
 
-First get the account numbers by doing
+首先通过以下方式获取账号
 
 `> eth.accounts`
 
-Then unlock the account you are sending from
+然后解锁你要发送的账户
 
 `> personal.unlockAccount( <from account> )`
 
-eg.
+例如
 
 `> personal.unlockAccount(eth.accounts[0])`
 
-Finally transfer 1 ether
+最后转一个 ether
 
 ```
 > eth.sendTransaction({from: "<from account>", to: "<to account>", value: web3.toWei(1, "ether")})
 ```
 
-### Exit
+### 退出
 
 ```
 > exit
 ```
 
-(This will also stop the node from running if it was started using `$ geth console` (as opposed to `$ geth attach`))
+(如果节点是用`$ geth console`（而不是`$ geth attach`）启动的，这也会使节点停止运行)
 
-## Connect to other nodes on your network
+## 连接到您的网络上的其他节点。
 
-1. Get the IP of the node : `$ ifconfig|grep netmask|awk '{print $2}'`
+1. 获取节点的 IP : `$ ifconfig|grep netmask|awk '{print $2}'`
 
-2. Get the enode of the node : `> admin.nodeInfo.enode`
+2. 获取节点的 enode : `> admin.nodeInfo.enode`
 
-3. REPLACE `[::]` in the enode string with the `[<ip address>]`
+3. 将 enode 字符串中的 `[::]` 替换为 `[<ip 地址>]`
 
-4. On your console `> admin.addPeer(< the enode string with the ip address in it>)`
+4. 在你的控制台 `> admin.addPeer(< 包含ip地址的enode字符串>)`
