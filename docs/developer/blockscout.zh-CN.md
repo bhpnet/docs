@@ -1,9 +1,5 @@
 ---
-title: blockscout
-order: 1
-nav:
-  order: 2
-  title: Developer
+title: Blockscout
 ---
 
 # 安装并部署 blockscout 浏览器

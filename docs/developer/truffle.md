@@ -53,7 +53,7 @@ Once this operation is completed, you'll now have a project structure with the f
 
 ### Create Contract
 
-You can write your own smart contract or download the BEP20 token smart contract template.
+You can write your own smart contract or download the BRC20 token smart contract template.
 
 ### Compile Contract
 

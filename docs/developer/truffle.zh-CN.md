@@ -51,6 +51,8 @@ truffle init
 - test/: 测试脚本目录，参考 [如何测试合约于应用？](https://learnblockchain.cn/docs/truffle/testing/testing-your-contracts.html)
 - truffle-config.js: Truffle [配置文件](https://learnblockchain.cn/docs/truffle/reference/configuration.html)
 
+### 创建合约
+
 ### 编译合约
 
 要编译 Truffle 项目里的合约，请切换到项目工程所在根目录，然后在终端中键入以下内容：

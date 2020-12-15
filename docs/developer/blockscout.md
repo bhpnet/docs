@@ -1,9 +1,5 @@
 ---
-title: blockscout
-order: 1
-nav:
-  order: 2
-  title: Developer
+title: Blockscout
 ---
 
 # Install and deploy blockscout browser

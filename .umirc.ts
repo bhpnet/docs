@@ -11,8 +11,8 @@ export default defineConfig({
     ['zh-CN', '中文'],
   ],
   exportStatic: {},
-  base: '/doc',
-  publicPath: '/doc/',
+  base: '/docs',
+  publicPath: '/docs/',
   mode: 'site',
   // more config: https://d.umijs.org/config
   navs: {
@@ -79,6 +79,8 @@ export default defineConfig({
           'developer/remix',
           'developer/truffle',
           'developer/blockscout',
+          'developer/verify',
+          'developer/local',
         ],
       },
       {
@@ -95,6 +97,8 @@ export default defineConfig({
           'developer/remix',
           'developer/truffle',
           'developer/blockscout',
+          'developer/verify',
+          'developer/local',
         ],
       },
       {
