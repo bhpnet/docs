@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'BHP',
   favicon: 'https://docs.bhpnet.io/default.png',
   logo: 'https://docs.bhpnet.io/default.png',
+
   outputPath: 'docs-dist',
   description: 'BHP Documents',
   locales: [
@@ -11,8 +12,8 @@ export default defineConfig({
     ['zh-CN', '中文'],
   ],
   exportStatic: {},
-  base: '/docs',
-  publicPath: '/docs/',
+  base: '/',
+  publicPath: '/',
   mode: 'site',
   // more config: https://d.umijs.org/config
   navs: {
