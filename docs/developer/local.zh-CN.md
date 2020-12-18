@@ -6,7 +6,7 @@ title: 本地 BHP 网络搭建
 
 ### 1. 安装 geth 和 puppeth
 
-[查看指南](fullnode.zh-CN.md)
+[查看指南](/developer/install)
 
 ### 2. 创建项目
 

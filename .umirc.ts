@@ -76,6 +76,7 @@ export default defineConfig({
       {
         title: 'Deploy',
         children: [
+          'developer/install',
           'developer/fullnode',
           'developer/remix',
           'developer/truffle',
@@ -94,6 +95,7 @@ export default defineConfig({
       {
         title: '部署',
         children: [
+          'developer/install',
           'developer/fullnode',
           'developer/remix',
           'developer/truffle',

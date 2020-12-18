@@ -6,7 +6,7 @@ title: Local BHP Network
 
 ### 1. Prereq : Install Geth
 
-Review the guide [here](/developer/fullnode)
+Review the guide [here](/developer/install)
 
 ### 2. Prereq : create /projects
 
