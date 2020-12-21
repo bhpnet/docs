@@ -86,6 +86,10 @@ export default defineConfig({
         ],
       },
       {
+        title: 'Gbhp CLI Client',
+        children: ['developer/cli/dump'],
+      },
+      {
         title: 'Tool',
         children: ['developer/tool'],
       },
@@ -103,6 +107,10 @@ export default defineConfig({
           'developer/verify',
           'developer/local',
         ],
+      },
+      {
+        title: 'Gbhp 命令行客户端',
+        children: ['developer/cli/dump'],
       },
       {
         title: '工具',
