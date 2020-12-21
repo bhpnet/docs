@@ -44,7 +44,16 @@ make gbhp
 
 或者可以直接下载 github 仓库的可执行文件
 
-如果环境变量配置无误，则通过运行以上命令即可完成`gbhp`的安装。现在检查您的`gbhp`版本是否正确：
+如果环境变量配置无误，则通过运行以上命令即可完成`gbhp`的安装。
+
+- 添加环境变量(`<>`中填写 gbhp 文件位置，默认在`go-bhp`目录中的`/build/bin`下面)
+
+```shell
+echo "export PATH=$PATH:<gbhp bin dir>" >> ~/.bashrc
+source ~/.bashrc
+```
+
+- 检查您的`gbhp`版本是否正确
 
 ```shell
 gbhp version

@@ -4,7 +4,7 @@ title: Local BHP Network
 
 ## Setting up your BHP Node(s)
 
-### 1. Prereq : Install Geth
+### 1. Prereq : Install Gbhp
 
 Review the guide [here](/developer/install)
 

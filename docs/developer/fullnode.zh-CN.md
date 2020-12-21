@@ -8,6 +8,10 @@ nav:
 
 # 如何在 BHP 上运行全节点
 
+> **提示**
+>
+> 需要先[安装 gbhp](/zh-CN/developer/install)
+
 ## 全节点功能
 
 - 将完整的区块链历史记录存储在磁盘上，并可以接收来自网络的数据请求。
@@ -28,32 +32,25 @@ nav:
 同步模式
 
 - 快速同步
-  默认的同步模式，当指定同步模式为 “fast” 时，以太坊节点会从网络同步所有的区块头，区块体以及状态数据，但不对区块中的交易进行重放，只会对区块中的数据进行校验。
+  默认的同步模式，当指定同步模式为 “fast” 时，BHP 节点会从网络同步所有的区块头，区块体以及状态数据，但不对区块中的交易进行重放，只会对区块中的数据进行校验。
 
 - 完全同步
-  当指定同步模式为"full"时，以太坊节点会从网络同步所有的区块头，区块体并重放区块中的交易以生成状态数据。
+  当指定同步模式为"full"时，BHP 节点会从网络同步所有的区块头，区块体并重放区块中的交易以生成状态数据。
 
 ## 运行全节点的步骤
 
+在`gbhp`目录下运行以下命令
+
 - 控制台方式启动节点
 
-```
+```shell
 gbhp --datadir node
 ```
 
 - 后台进程方式启动 `gbhp`
 
 ```shell
-nohup gbhp --datadir node
-```
-
-如果直接在 shell 终端运行，可以用 CTRL + C 关闭进程，如何关闭运行在后台的 geth 进程呢，可以使用以下脚本：
-
-```shell
-#!/bin/sh
-pid=`ps -ef|grep gbhp|grep -v gbhp|awk '{print $2}'`
-echo $pid
-kill -INT $pid
+nohup gbhp --datadir node >gbhp.log &
 ```
 
 ## 升级为验证节点
@@ -78,7 +75,7 @@ gbhp attach data/gbhp.ipc
 false
 ```
 
-### 3. 创建验证人
+### 3. 启动验证人节点
 
 ```shell
 gbhp --datadir ./node -unlock {your-validator-address} --password password.txt  --mine --allow-insecure-unlock

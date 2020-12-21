@@ -4,9 +4,9 @@ title: 本地 BHP 网络搭建
 
 ## 设置您的 BHP 节点
 
-### 1. 安装 geth 和 puppeth
+### 1. 安装 Gbhp 和 puppeth
 
-[查看指南](/developer/install)
+[查看指南](/zh-CN/developer/install)
 
 ### 2. 创建项目
 
@@ -28,8 +28,8 @@ echo '12345678' > node2/password.txt
 - 创建账户
 
 ```shell
-geth --datadir node1/ account new --password node1/password.txt
-geth --datadir node2/ account new --password node2/password.txt
+gbhp --datadir node1/ account new --password node1/password.txt
+gbhp --datadir node2/ account new --password node2/password.txt
 ```
 
 记住里面的账户地址
@@ -173,8 +173,8 @@ INFO [11-19|11:58:33.586] Saved genesis chain spec                 client=harmon
 ### 5. 初始化节点
 
 ```shell
-geth --datadir /projects/local/node1 init /projects/local/genesis.json
-geth --datadir /projects/local/node2 init /projects/local/genesis.json
+gbhp --datadir /projects/local/node1 init /projects/local/genesis.json
+gbhp --datadir /projects/local/node2 init /projects/local/genesis.json
 ```
 
 ### 6. 创建一个引导节点
@@ -212,8 +212,8 @@ INFO [11-19|16:42:14.896] New local node record                    seq=1 id=eaae
 使用此方式 2 个节点会以 bootnode 方式通信连接
 
 ```
-geth --datadir /projects/local/node1 --password /projects/local/node1/password.txt --syncmode 'full' --gcmode=archive --port 26681 --http --http.addr '0.0.0.0' --http.port 26682 --http.vhosts '*' --ws --ws.addr '0.0.0.0' --ws.port 26682 --ws.origins '*' --bootnodes 'enode://10b89d31a13d672c3b5b1c27441089e84921c47de304e24ede773cafb935862473250a5f6c8621c738002e47003eefba97999cdfde91c8a1614d1a36f83b8c50@172.19.166.129:0?discport=26690' --networkid 1000 --unlock '0xD68066d2292b9e80FdE6904447A044050ca3fA3C' --allow-insecure-unlock --mine
-geth --datadir /projects/local/node2 --password /projects/local/node2/password.txt --syncmode 'full' --gcmode=archive --port 26691 --http --http.addr '0.0.0.0' --http.port 26692 --http.vhosts '*' --ws --ws.addr '0.0.0.0' --ws.port 26692 --ws.origins '*' --bootnodes 'enode://10b89d31a13d672c3b5b1c27441089e84921c47de304e24ede773cafb935862473250a5f6c8621c738002e47003eefba97999cdfde91c8a1614d1a36f83b8c50@172.19.166.129:0?discport=26690' --networkid 1000 --unlock '0x30439478508367F4B8dBEC1Df0a1D61169b5a4d1' --allow-insecure-unlock --mine
+gbhp --datadir /projects/local/node1 --password /projects/local/node1/password.txt --syncmode 'full' --gcmode=archive --port 26681 --http --http.addr '0.0.0.0' --http.port 26682 --http.vhosts '*' --ws --ws.addr '0.0.0.0' --ws.port 26682 --ws.origins '*' --bootnodes 'enode://10b89d31a13d672c3b5b1c27441089e84921c47de304e24ede773cafb935862473250a5f6c8621c738002e47003eefba97999cdfde91c8a1614d1a36f83b8c50@172.19.166.129:0?discport=26690' --networkid 1000 --unlock '0xD68066d2292b9e80FdE6904447A044050ca3fA3C' --allow-insecure-unlock --mine
+gbhp --datadir /projects/local/node2 --password /projects/local/node2/password.txt --syncmode 'full' --gcmode=archive --port 26691 --http --http.addr '0.0.0.0' --http.port 26692 --http.vhosts '*' --ws --ws.addr '0.0.0.0' --ws.port 26692 --ws.origins '*' --bootnodes 'enode://10b89d31a13d672c3b5b1c27441089e84921c47de304e24ede773cafb935862473250a5f6c8621c738002e47003eefba97999cdfde91c8a1614d1a36f83b8c50@172.19.166.129:0?discport=26690' --networkid 1000 --unlock '0x30439478508367F4B8dBEC1Df0a1D61169b5a4d1' --allow-insecure-unlock --mine
 ```
 
 也可以采用直连方式互相连接(采用此步可以直接看第 8 步)
@@ -221,12 +221,12 @@ geth --datadir /projects/local/node2 --password /projects/local/node2/password.t
 - 启动该节点
 
 ```
-geth --datadir /projects/local/node2 --port 30304 --nodiscover --networkid 1000 console
+gbhp --datadir /projects/local/node2 --port 30304 --nodiscover --networkid 1000 console
 ```
 
 ### 9. 连接其他节点
 
-进入第一个节点的 geth console :
+进入第一个节点的 gbhp console :
 
 ```
 > admin.nodeInfo.enode
@@ -238,7 +238,7 @@ In the other console :
 > admin.addPeer( <the enode value from the first console> )
 ```
 
-## geth 命令行相关使用
+## gbhp 命令行相关使用
 
 ### 节点信息
 
@@ -342,7 +342,7 @@ The first block may take a while to mine, allow a few minutes
 > exit
 ```
 
-(如果节点是用`$ geth console`（而不是`$ geth attach`）启动的，这也会使节点停止运行)
+(如果节点是用`$ gbhp console`（而不是`$ gbhp attach`）启动的，这也会使节点停止运行)
 
 ## 连接到您的网络上的其他节点。
 

@@ -42,7 +42,16 @@ make gbhp
 
 or you can download the pre-build binaries from release page
 
-If your environment variables have set up correctly, you should not get any errors by running the above commands. Now check your `gbhp` version.
+If your environment variables have set up correctly, you should not get any errors by running the above commands.
+
+- Set environment variables((Set the gbhp file location in `<>`, the default is under `/build/bin` in the `go-bhp` directory))
+
+```shell
+echo "export PATH=$PATH:<gbhp dir>" >> ~/.bashrc
+source ~/.bashrc
+```
+
+- check your `gbhp` version
 
 ```shell
 gbhp version
