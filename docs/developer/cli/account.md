@@ -1,5 +1,5 @@
 ---
-title: dump
+title: account
 ---
 
 ## Account
@@ -91,73 +91,9 @@ gbhp account import [options] <keyfile>
 Examples
 
 ```shell script
-
-```
-
-## Attach
-
-Start an interactive JavaScript environment (connect to node).gbhp.ipc file is in the datadir data directory
-
-```shell script
-gbhp attach gbhp.ipc
-```
-
-Examples
-
-```shell script
-root@iZwz9af3cg1abi4nmbogwxZ:~/bhp/node2# gbhp attach gbhp.ipc
-Welcome to the Geth JavaScript console!
-
-instance: Geth/v1.9.25-stable-10e0e069/linux-amd64/go1.14.13
-at block: 0 (Mon Nov 23 2020 19:34:41 GMT+0800 (CST))
- datadir: /root/bhp/node2
- modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
-
-To exit, press ctrl-d
->
-```
-
-## Removedb
-
-Remove blockchain and state databases
-
-```shell script
-gbhp removedb --datadir value
-```
-
-Examples
-
-```shell script
-root@iZwz9af3cg1abi4nmbogwxZ:~/bhp# gbhp removedb --datadir node2/
-Remove full node state database (/root/bhp/node2/gbhp/chaindata)? [y/n] y
-Remove full node state database (/root/bhp/node2/gbhp/chaindata)? [y/n] y
-INFO [12-21|17:06:13.807] Database successfully deleted            path=/root/bhp/node2/gbhp/chaindata elapsed=23.122ms
-Remove full node ancient database (/root/bhp/node2/gbhp/chaindata/ancient)? [y/n] y
-Remove full node ancient database (/root/bhp/node2/gbhp/chaindata/ancient)? [y/n] y
-INFO [12-21|17:06:17.880] Database successfully deleted            path=/root/bhp/node2/gbhp/chaindata/ancient elapsed="278.718µs"
-INFO [12-21|17:06:17.880] Light node database missing              path=/root/bhp/node2/gbhp/lightchaindata
-```
-
-## Version
-
-Print version numbers
-
-```shell script
-gbhp version
-```
-
-Examples
-
-```shell script
-root@iZwz9af3cg1abi4nmbogwxZ:~/bhp# gbhp version
-Gbhp
-Version: 1.9.25-stable
-Git Commit: 10e0e06964a3e6b8a3f7c02061c794a22f293161
-Git Commit Date: 20201218
-Architecture: amd64
-Protocol Versions: [65 64 63]
-Go Version: go1.14.13
-Operating System: linux
-GOPATH=/home/go
-GOROOT=/usr/local/go
+root@iZwz9af3cg1abi4nmbogwxZ:~/bhp# gbhp account import 1.txt --datadir node
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:
+Repeat password:
+Address: {e17281c17443b90a145d1a103d57189ffb2d912f}
 ```

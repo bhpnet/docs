@@ -88,11 +88,7 @@ export default defineConfig({
       {
         title: 'Gbhp CLI Client',
         children: [
-          'developer/cli/dump',
-          'developer/cli/account_new',
-          'developer/cli/account_list',
-          'developer/cli/account_import',
-          'developer/cli/account_update',
+          'developer/cli/account',
           'developer/cli/attach',
           'developer/cli/removedb',
           'developer/cli/version',
@@ -120,11 +116,7 @@ export default defineConfig({
       {
         title: 'Gbhp 命令行客户端',
         children: [
-          'developer/cli/dump',
-          'developer/cli/account_new',
-          'developer/cli/account_list',
-          'developer/cli/account_import',
-          'developer/cli/account_update',
+          'developer/cli/account',
           'developer/cli/attach',
           'developer/cli/removedb',
           'developer/cli/version',
