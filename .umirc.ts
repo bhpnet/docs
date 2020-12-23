@@ -87,7 +87,12 @@ export default defineConfig({
       },
       {
         title: 'Gbhp CLI Client',
-        children: ['developer/cli/dump'],
+        children: [
+          'developer/cli/dump',
+          'developer/cli/dumpgenesis',
+          'developer/cli/export',
+          'developer/cli/import',
+        ],
       },
       {
         title: 'Tool',
@@ -110,7 +115,12 @@ export default defineConfig({
       },
       {
         title: 'Gbhp 命令行客户端',
-        children: ['developer/cli/dump'],
+        children: [
+          'developer/cli/dump',
+          'developer/cli/dumpgenesis',
+          'developer/cli/export',
+          'developer/cli/import',
+        ],
       },
       {
         title: '工具',
