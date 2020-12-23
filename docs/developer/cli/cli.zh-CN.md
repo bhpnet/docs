@@ -3,12 +3,12 @@ title: console
 ---
 
 ## console                            
-### Start an interactive JavaScript environment.The JavaScript console is started with the console sub-commands. The console subcommands starts the full node and then opens the console. 
+### 启动一个交互式的 JavaScript 环境，JavaScript 控制台使用 console 子命令启动。这个子命令启动全节点并且打开控制台。
 
 ```shell
 gbhp console --datadir=data/
 ```
-Output:
+输出：
 ```
 Welcome to the Gbhp JavaScript console!
 
@@ -24,17 +24,17 @@ To exit, press ctrl-d
 ```
 
 ## copydb                             
-### Create a local chain from a target chaindata folder
+### 从目标链数据目录创建一个本地链
 ```shell
 gbhp --datadir=data/ copydb  ~/.bhp/gbhp/chaindata/ ~/.bhp/gbhp/chaindata/ancient/
 ```
 
 ## init                               
-### Bootstrap and initialize a new genesis block
+### 引导和初始化一个新的创世块
 ```shell
 gbhp init genesis.json --datadir data/
 ```
-Output:
+输出：
 ```
 INFO [12-21|14:39:04.212] Maximum peer count                       BHP=50 LES=0 total=50
 INFO [12-21|14:39:04.212] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
@@ -49,11 +49,11 @@ INFO [12-21|14:39:04.220] Successfully wrote genesis state         database=ligh
 ```
 
 ## inspect                            
-### Inspect the storage size for each type of data in the database
+### 查看数据库中每种数据类型的存储大小
 ```shell
 gbhp inspect --datadir ./data
 ```
-Output:
+输出：
 ```
 +-----------------+--------------------+------------+---------+
 |    DATABASE     |      CATEGORY      |    SIZE    |  ITEMS  |
@@ -86,17 +86,17 @@ Output:
 ```
 
 ## js                                 
-### Execute the specified JavaScript files
+### 执行指定的 JavaScript 文件
 ```shell
 gbhp js path-to-js.js
 ```
 
 ## license                            
-### Display license information
+### 显示许可证
 ```shell
 gbhp license
 ```
-Output:
+输出：
 ```
 Gbhp is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
