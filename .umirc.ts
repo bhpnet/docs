@@ -86,6 +86,19 @@ export default defineConfig({
         ],
       },
       {
+        title: 'Gbhp CLI Client',
+        children: [
+          'developer/cli/dump',
+          'developer/cli/dumpgenesis',
+          'developer/cli/export',
+          'developer/cli/import',
+          'developer/cli/account',
+          'developer/cli/attach',
+          'developer/cli/removedb',
+          'developer/cli/version',
+        ],
+      },
+      {
         title: 'Tool',
         children: ['developer/tool'],
       },
@@ -102,6 +115,19 @@ export default defineConfig({
           'developer/blockscout',
           'developer/verify',
           'developer/local',
+        ],
+      },
+      {
+        title: 'Gbhp 命令行客户端',
+        children: [
+          'developer/cli/dump',
+          'developer/cli/dumpgenesis',
+          'developer/cli/export',
+          'developer/cli/import',
+          'developer/cli/account',
+          'developer/cli/attach',
+          'developer/cli/removedb',
+          'developer/cli/version',
         ],
       },
       {
