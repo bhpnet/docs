@@ -92,6 +92,10 @@ export default defineConfig({
           'developer/cli/dumpgenesis',
           'developer/cli/export',
           'developer/cli/import',
+          'developer/cli/account',
+          'developer/cli/attach',
+          'developer/cli/removedb',
+          'developer/cli/version',
         ],
       },
       {
@@ -120,6 +124,10 @@ export default defineConfig({
           'developer/cli/dumpgenesis',
           'developer/cli/export',
           'developer/cli/import',
+          'developer/cli/account',
+          'developer/cli/attach',
+          'developer/cli/removedb',
+          'developer/cli/version',
         ],
       },
       {
