@@ -2,13 +2,16 @@
 title: console
 ---
 
-## console                            
-### Start an interactive JavaScript environment.The JavaScript console is started with the console sub-commands. The console subcommands starts the full node and then opens the console. 
+## console
+
+Start an interactive JavaScript environment.The JavaScript console is started with the console sub-commands. The console subcommands starts the full node and then opens the console.
 
 ```shell
 gbhp console --datadir=data/
 ```
+
 Output:
+
 ```
 Welcome to the Gbhp JavaScript console!
 
@@ -19,6 +22,6 @@ at block: 0 (Mon Nov 23 2020 19:34:41 GMT+0800 (CST))
  modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
 
 To exit, press ctrl-d
-> 
+>
 
 ```

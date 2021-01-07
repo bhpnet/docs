@@ -2,9 +2,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'BHP',
-  favicon: 'https://docs.bhpnet.io/default.png',
-  logo: 'https://docs.bhpnet.io/default.png',
-
+  favicon: 'https://docs.bhpnet.io/images/logo.png',
+  logo: 'https://docs.bhpnet.io/images/logo.png',
   outputPath: 'docs-dist',
   description: 'BHP Documents',
   locales: [
@@ -50,7 +49,7 @@ export default defineConfig({
       },
       {
         title: 'Wallet',
-        children: ['guide/wallet', 'guide/metamask'],
+        children: ['guide/metamask'],
       },
     ],
     // 如果该路径有其他语言，需在前面加上语言前缀，需与 locales 配置中的路径一致
@@ -69,7 +68,7 @@ export default defineConfig({
       },
       {
         title: '钱包',
-        children: ['guide/wallet', 'guide/metamask'],
+        children: ['guide/metamask'],
       },
     ],
     '/developer': [
@@ -96,6 +95,11 @@ export default defineConfig({
           'developer/cli/attach',
           'developer/cli/removedb',
           'developer/cli/version',
+          'developer/cli/console',
+          'developer/cli/init',
+          'developer/cli/inspect',
+          'developer/cli/js',
+          'developer/cli/license',
         ],
       },
       {
@@ -128,6 +132,11 @@ export default defineConfig({
           'developer/cli/attach',
           'developer/cli/removedb',
           'developer/cli/version',
+          'developer/cli/console',
+          'developer/cli/init',
+          'developer/cli/inspect',
+          'developer/cli/js',
+          'developer/cli/license',
         ],
       },
       {

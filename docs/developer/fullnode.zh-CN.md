@@ -53,6 +53,14 @@ gbhp --datadir node
 nohup gbhp --datadir node >gbhp.log &
 ```
 
+- 配置文件方式启动
+
+除了将大量标志传递给 bhp 二进制文件之外，还可以通过以下方式传递配置文件：
+
+```shell
+gbhp --config config.toml
+```
+
 ## 升级为验证节点
 
 ### 1. 创建钱包
