@@ -28,7 +28,9 @@
     ]
   },
   "dependencies": {
-    "react": "^16.12.0",
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.10",
     "father-build": "^1.17.2",
