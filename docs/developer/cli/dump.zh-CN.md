@@ -8,7 +8,7 @@ title: dump
 
 ### 命令
 
-```text
+```shell
 dump [command options] [arguments...]
 OPTIONS:
 --datadir  value   数据库目录

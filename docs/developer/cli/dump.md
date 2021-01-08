@@ -8,7 +8,7 @@ Dump a specific block from storage
 
 ### Command
 
-```text
+```shell
 dump [command options] [arguments...]
 OPTIONS:
 --datadir  value   Data directory for the databases and keystore
