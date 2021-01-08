@@ -40,19 +40,10 @@ cd go-bhp
 make gbhp
 ```
 
-or you can download the pre-build binaries from release page
+> you can download the pre-build binaries from release page
 
-If your environment variables have set up correctly, you should not get any errors by running the above commands.
+After compilation completed, the generated binary is in the folder `build/bin`.
 
-- Set environment variables((Set the gbhp file location in `<>`, the default is under `/build/bin` in the `go-bhp` directory))
+- Run
 
-```shell
-echo "export PATH=$PATH:<gbhp dir>" >> ~/.bashrc
-source ~/.bashrc
-```
-
-- check your `gbhp` version
-
-```shell
-gbhp version
-```
+By running `./build/bin/gbhp --help`, we can get all `option`

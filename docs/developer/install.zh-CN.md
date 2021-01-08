@@ -32,7 +32,7 @@ go version
 请确保您的服务器可以访问 google.com，因为我们的项目依赖于 google 提供的某些库（如果您无法访问 google.com，也可以尝试添加代理：`export GOPROXY=https://goproxy.io`）
 
 ```shell
-# 获取源码
+# 源码下载
 git clone https://github.com/bhpnet/go-bhp
 # 切换到最新分支
 git checkout <最新分支>
@@ -42,19 +42,10 @@ cd go-bhp
 make gbhp
 ```
 
-或者可以直接下载 github 仓库的可执行文件
+> 您也可以直接下载 github 仓库的可执行文件
 
-如果环境变量配置无误，则通过运行以上命令即可完成`gbhp`的安装。
+编译完成后，生成的二进制文件在 build/bin 目录下
 
-- 添加环境变量(`<>`中填写 gbhp 文件位置，默认在`go-bhp`目录中的`/build/bin`下面)
+- 运行
 
-```shell
-echo "export PATH=$PATH:<gbhp bin dir>" >> ~/.bashrc
-source ~/.bashrc
-```
-
-- 检查您的`gbhp`版本是否正确
-
-```shell
-gbhp version
-```
+通过`./build/bin/gbhp --help`查看所有的`option`选项，根据情况自行设置相关配置参数。

@@ -85,16 +85,16 @@ module.exports = {
     },
     testnet: {
       provider: () =>
-        new HDWalletProvider(mnemonic, `http://47.103.97.77:26682`),
-      network_id: 888,
+        new HDWalletProvider(mnemonic, `https://http-mainnet.bhpnet.io`),
+      network_id: 31415,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
     },
     bhp: {
       provider: () =>
-        new HDWalletProvider(mnemonic, `http://47.103.97.77:26682`),
-      network_id: 999,
+        new HDWalletProvider(mnemonic, `https://http-testnet.bhpnet.io`),
+      network_id: 1024,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
