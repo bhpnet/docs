@@ -8,7 +8,7 @@ Download from：https://metamask.io/
 
 Adding a custom network.
 
-Main Network
+mainnet
 
 ```shell
 chainid: 31415
@@ -16,7 +16,9 @@ rpc: https://http-mainnet.bhpnet.io
 scan: https://scan.bhpnet.io
 ```
 
-Test network
+testnet
+
+![img](/images/remix-5.png)
 
 ```shell
 chainid: 1024

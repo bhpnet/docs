@@ -18,6 +18,8 @@ scan: https://scan.bhpnet.io
 
 测试网
 
+![img](/images/remix-5.png)
+
 ```shell
 chainid: 1024
 rpc: https://http-testnet.bhpnet.io
