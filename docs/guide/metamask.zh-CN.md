@@ -10,6 +10,8 @@ title: MetaMask 使用指南
 
 主网
 
+![img](/images/remix-4-2.png)
+
 ```shell
 chainid: 6794
 rpc: https://http-mainnet.bhpnet.io

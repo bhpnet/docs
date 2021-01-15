@@ -10,6 +10,8 @@ Adding a custom network.
 
 mainnet
 
+![img](/images/remix-4-2.png)
+
 ```shell
 chainid: 6794
 rpc: https://http-mainnet.bhpnet.io

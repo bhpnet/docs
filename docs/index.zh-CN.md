@@ -22,4 +22,4 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by bhp
 
 ## 反馈与共建
 
-请访问 [GitHub](https://github.com/bhpnet/docs) 或加入讨论群：
+请访问 [GitHub](https://github.com/bhpnet/docs) 或加入[讨论群](https://discord.com/invite/V2m6DRv)

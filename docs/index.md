@@ -17,9 +17,9 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
     title: Consensus
     desc: Adopting BPoS consensus mechanism, it features low transaction cost, low transaction latency, and high transaction concurrency.
-footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by bhp
+footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by BHP Network
 ---
 
 ## Feedback
 
-Please visit [GitHub](https://github.com/bhpnet/docs) or join the discuss group
+Please visit [GitHub](https://github.com/bhpnet/docs) or join the [discuss](https://discord.com/invite/V2m6DRv) group
