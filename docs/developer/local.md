@@ -40,7 +40,7 @@ With the following contents :
 ```json
 {
   "config": {
-    "chainId": 999,
+    "chainId": 3476,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,

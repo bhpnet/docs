@@ -86,7 +86,7 @@ module.exports = {
     testnet: {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://http-mainnet.bhpnet.io`),
-      network_id: 31415,
+      network_id: 6794,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
@@ -94,7 +94,7 @@ module.exports = {
     bhp: {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://http-testnet.bhpnet.io`),
-      network_id: 1024,
+      network_id: 3476,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
@@ -148,7 +148,7 @@ Compiling your contracts...
 Starting migrations...
 ======================
 > Network name:    'testnet'
-> Network id:      999
+> Network id:      3476
 > Block gas limit: 8000000 (0x7a1200)
 
 

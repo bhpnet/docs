@@ -20,7 +20,7 @@ dumpconfig [command options] [arguments...]
 > gbhp --datadir node dumpconfig config.toml
 > cat config.toml
 [Eth]
-NetworkId = 999
+NetworkId = 3476
 SyncMode = "fast"
 DiscoveryURLs = []
 NoPruning = false

@@ -23,12 +23,20 @@ export default defineConfig({
         title: 'GitHub',
         path: 'https://github.com/bhpnet/go-bhp',
       },
+      {
+        title: 'Website',
+        path: 'https://bhpnet.io',
+      },
     ],
     'zh-CN': [
       null, // null 值代表保留约定式生成的导航，只做增量配置
       {
         title: 'GitHub',
         path: 'https://github.com/bhpnet/go-bhp',
+      },
+      {
+        title: '官网',
+        path: 'https://bhpnet.io',
       },
     ],
   },

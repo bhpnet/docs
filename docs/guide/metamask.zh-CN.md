@@ -11,7 +11,7 @@ title: MetaMask 使用指南
 主网
 
 ```shell
-chainid: 31415
+chainid: 6794
 rpc: https://http-mainnet.bhpnet.io
 scan: https://scan.bhpnet.io
 ```
@@ -21,7 +21,7 @@ scan: https://scan.bhpnet.io
 ![img](/images/remix-5.png)
 
 ```shell
-chainid: 1024
+chainid: 3476
 rpc: https://http-testnet.bhpnet.io
 scan: https://testnet.bhpnet.io
 ```

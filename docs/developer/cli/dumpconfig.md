@@ -20,7 +20,7 @@ When the file name is not added, directly output to the console.
 > gbhp --datadir node dumpconfig config.toml
 > cat config.toml
 [Eth]
-NetworkId = 999
+NetworkId = 3476
 SyncMode = "fast"
 DiscoveryURLs = []
 NoPruning = false

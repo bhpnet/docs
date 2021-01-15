@@ -8,7 +8,7 @@
 
 ### 名词解释
 
-- `chainId` :链的唯一性标识，BHP 测试网为 1024
+- `chainId` :链的唯一性标识，BHP 测试网为 3476
 
 - `alloc`: 预分配的账号
 
@@ -27,7 +27,7 @@
 ```json
 {
   "config": {
-    "chainId": 31415,
+    "chainId": 6794,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,
@@ -79,7 +79,7 @@
 ```json
 {
   "config": {
-    "chainId": 1024,
+    "chainId": 3476,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,

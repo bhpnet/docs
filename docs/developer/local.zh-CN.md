@@ -36,7 +36,7 @@ gbhp --datadir node1/ account new --password node1/password.txt
 ```json
 {
   "config": {
-    "chainId": 999,
+    "chainId": 3476,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,
