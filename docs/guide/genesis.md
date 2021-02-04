@@ -27,7 +27,7 @@ System contract repo: [bhp-system-contracts](https://github.com/bhpnet/bhp-syste
 ```json
 {
   "config": {
-    "chainId": 6794,
+    "chainId": 6779,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,

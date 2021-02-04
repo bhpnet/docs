@@ -13,7 +13,7 @@ mainnet
 ![img](/images/remix-4-2.png)
 
 ```shell
-chainid: 6794
+chainid: 6779
 rpc: https://http-mainnet.bhpnet.io
 scan: https://scan.bhpnet.io
 ```

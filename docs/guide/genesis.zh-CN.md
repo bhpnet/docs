@@ -27,7 +27,7 @@
 ```json
 {
   "config": {
-    "chainId": 6794,
+    "chainId": 6779,
     "homesteadBlock": 0,
     "daoForkSupport": true,
     "eip150Block": 0,

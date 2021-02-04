@@ -84,7 +84,7 @@ module.exports = {
     testnet: {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://http-mainnet.bhpnet.io`),
-      network_id: 6794,
+      network_id: 6779,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
