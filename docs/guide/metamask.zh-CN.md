@@ -8,7 +8,7 @@ title: MetaMask 使用指南
 
 添加自定义网络：
 
-主网
+### 主网
 
 ![img](/images/remix-4-2.png)
 
@@ -18,7 +18,7 @@ rpc: https://http-mainnet.bhpnet.io
 scan: https://scan.bhpnet.io
 ```
 
-测试网
+### 测试网
 
 ![img](/images/remix-5.png)
 

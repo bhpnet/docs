@@ -46,6 +46,10 @@ make gbhp
 
 编译完成后，生成的二进制文件在 build/bin 目录下
 
-- 运行
+### 运行
 
 通过`./build/bin/gbhp --help`查看所有的`option`选项，根据情况自行设置相关配置参数。
+
+### 网络接入
+
+程序启动默认接入`mainnet`，如需接入公共测试网，可添加`option --testnet`。

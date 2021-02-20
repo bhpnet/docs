@@ -8,7 +8,7 @@ Download from：https://metamask.io/
 
 Adding a custom network.
 
-mainnet
+### mainnet
 
 ![img](/images/remix-4-2.png)
 
@@ -18,7 +18,7 @@ rpc: https://http-mainnet.bhpnet.io
 scan: https://scan.bhpnet.io
 ```
 
-testnet
+### testnet
 
 ![img](/images/remix-5.png)
 

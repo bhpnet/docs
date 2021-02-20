@@ -10,6 +10,12 @@ BPoS is a combination of PoA and Pos. To become a verifier, you need to submit a
 
 All active verifiers are ranked according to predetermined rules and take turns to be out of the block. If a verifier does not get out of the block in time in its own block-out round, active verifiers who have not participated in block-out operations in the past n/2 (n is the number of active verifiers) blocks are randomly blocked out. At least n/2+1 active verifiers work properly to ensure the proper operation of the blockchain.
 
+### Glossary
+
+- validator:Responsible for packaging out blocks for on-chain transactions.
+- active validator:The current set of validators responsible for packing out blocks, with a maximum of 21.
+- epoch:Time interval in blocks, currently 1epoch = 40block on `BHP`. At the end of each epoch, the blockchain interacts with the system contracts to update active validators.
+
 ### System Contract
 
 - Code: [bhp-system-contracts](https://github.com/bhpnet/bhp-system-contracts)
@@ -27,13 +33,13 @@ Blockchain invocation of system contracts.
 - the `Punish` contract is invoked to penalize the validator when it is found that the validator is not working properly.
 - at the end of each epoch, the `Validators` contract is invoked to update the active validator, based on the ranking.
 
-### Pledge
+### Staking
 
-Any account can pledge any number of HTs to a validator. The minimum pledge amount for each validator is 32 BHP. If you want to get back the pledged HTs, you need to do the following.
+For any account, any number of coins can be staked to the validator, and the minimum staking amount for each validator is `32BHP`. If you want to unstake, you need to do the following:
 
-1. send a call to the `Validators` contract and send an unpledge (`unstake`) declaration transaction for a particular validator;
-2. wait for `17280` blocks and then invoke the `Validators` contract to send an extract pledge (`withdrawStaking`) transaction to retrieve all pledges in this validator.
+1. Send an unstaking transaction for a validator to the `Validators` contract;
+2. Waiting for `17280` blocks before sending a transaction to Validators contract to withdraw all staking coins on this validator;
 
-### Penalties
+### Punishment
 
-Whenever a validator is found not to have made a block out as predefined, the Punish contract is automatically invoked at the end of this block to count the validator. When the count reaches 24, forfeit all of the verifier's revenue. When the count reaches 48, the verifier is removed from the list of active verifiers, and the verifier is disqualified.
+Whenever a validator is found not to pack block as predefined, the `Punish` contract is automatically called at the end of this block and the validator is counted. When the count reaches 24, all income of the validator is punished. When the count reaches 48, the validator is removed from the list of active validators, and the validator is disqualified.

@@ -44,6 +44,10 @@ make gbhp
 
 After compilation completed, the generated binary is in the folder `build/bin`.
 
-- Run
+### Run
 
 By running `./build/bin/gbhp --help`, we can get all `option`
+
+### Network
+
+Program will connect into `mainnet` after started. If want to connect the public testnet, you can add `option --testnet` to command when starting.
