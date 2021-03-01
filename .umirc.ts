@@ -85,11 +85,14 @@ export default defineConfig({
         children: [
           'developer/install',
           'developer/fullnode',
+          'developer/mainnet',
+          'developer/testnet',
           'developer/remix',
           'developer/truffle',
           'developer/blockscout',
           'developer/verify',
           'developer/local',
+          'developer/txpool',
         ],
       },
       {
@@ -123,11 +126,14 @@ export default defineConfig({
         children: [
           'developer/install',
           'developer/fullnode',
+          'developer/mainnet',
+          'developer/testnet',
           'developer/remix',
           'developer/truffle',
           'developer/blockscout',
           'developer/verify',
           'developer/local',
+          'developer/txpool',
         ],
       },
       {
