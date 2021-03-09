@@ -41,19 +41,19 @@ nav:
 
 在`gbhp`目录下运行以下命令
 
-- 控制台方式启动节点
+### 控制台方式启动节点
 
 ```shell
 gbhp --datadir node
 ```
 
-- 后台进程方式启动 `gbhp`
+### `nohup`后台进程方式启动 `gbhp`
 
 ```shell
 nohup gbhp --datadir node >gbhp.log &
 ```
 
-- 配置文件方式启动
+### 配置文件方式启动
 
 除了将大量标志传递给 bhp 二进制文件之外，还可以通过以下方式传递配置文件：
 
